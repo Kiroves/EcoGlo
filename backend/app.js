@@ -2,7 +2,6 @@ const express = require('express')
 const utils = require('./util');
 const scrapeProductInfo = require('./scrape');
 const sustainableIngredients = require('./analyze');
-const unsustainableIngredients = require('./analyze');
 const app = express()
 const port = 3000
 
@@ -11,9 +10,7 @@ const IngredientsMap = {};
 for (const ingredient of sustainableIngredients) {
   IngredientsMap[ingredient.name] = ingredient;
 }
-for (const ingredient of unsustainableIngredients) {
-  IngredientsMap[ingredient.name] = ingredient;
-}
+console.log(IngredientsMap);
 
 
 app.get('/', async (req, res) => {
