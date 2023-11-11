@@ -1,7 +1,7 @@
 const express = require('express')
 const utils = require('./util');
 const scrapeProductInfo = require('./scrape');
-const sustainableIngredients = require('./analyze');
+const sustainableIngredients = require('./list');
 const app = express()
 const port = 3000
 
