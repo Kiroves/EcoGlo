@@ -1,33 +1,17 @@
 const express = require('express')
-const axios = require('axios');
-const cheerio = require('cheerio');
-const cors = require('cors')
+const puppeteer = require('puppeteer')
 
 const app = express()
-app.use(cors());
 const port = 3000
 
-app.get('/', (req, res) => {
-
-  const url = 'https://www.sephora.com/ca/en/'
-  
-  axios.get(url).then((response) => {
-    res.status(200).json(response.data);
-  })
-
-//   axios({
-//     url: url,
-//     method: "get",
-//     })
-//     .then(response => {
-//         res.status(200).json(response.data);
-//     })
-//     .catch((err) => {
-//         res.status(500).json({ message: err });
-//     });
-
-//   res.send('Hello World!')
-
+app.get('/', async(req, res) => {
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+  await page.goto('https://www.sephora.com/ca/en/product/sheer-skin-tint-with-hyaluronic-acid-squalane-P501777?skuId=2536183&icid2=products%20grid:p501777:product', { waitUntil: "networkidle2" });
+  await page.waitForSelector("h1");
+  let a = await page.content();
+  console.log(a);
+  await browser.close();
 })
 
 app.listen(port, () => {
