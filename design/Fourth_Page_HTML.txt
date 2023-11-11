@@ -1,0 +1,21 @@
+<div style="width: 100%; height: 100%; position: relative; background: white">
+    <div style="width: 297px; height: 42px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 85px; height: 57px; left: -40px; top: -29px; position: absolute">
+        <div style="width: 40px; height: 28px; left: 48px; top: 35px; position: absolute; background: #6AC56E; border-top-left-radius: 14px; border-top-right-radius: 14px"></div>
+    </div>
+    <div style="width: 85px; height: 21px; left: 16px; top: 11px; position: absolute"><span style="color: #FAFAFA; font-size: 16px; font-family: Noto Sans; font-weight: 800; word-wrap: break-word">ECO </span><span style="color: black; font-size: 16px; font-family: Noto Sans; font-weight: 800; word-wrap: break-word">GLOW</span></div>
+    <div style="width: 25px; height: 25px; left: 272.24px; top: 4px; position: absolute; transform: rotate(43.60deg); transform-origin: 0 0; border-radius: 50px; border: 1px black solid"></div>
+    <div style="width: 231px; height: 337px; left: 33px; top: 155px; position: absolute; background: #D9D9D9; border-radius: 25px"></div>
+    <div style="width: 231px; height: 83px; left: 33px; top: 57px; position: absolute; background: #D9D9D9; border-radius: 25px"></div>
+    <div style="width: 114px; height: 24px; left: 48px; top: 171px; position: absolute; background: #6AC56E; border-radius: 25px"></div>
+    <div style="width: 80px; height: 24px; left: 168px; top: 171px; position: absolute; background: #D94646; border-radius: 25px"></div>
+    <div style="width: 73px; height: 58px; left: 48px; top: 68px; position: absolute; background: #4C4A49; border-radius: 10px"></div>
+    <div style="width: 120px; height: 58px; left: 128px; top: 68px; position: absolute; background: #4C4A49; border-radius: 10px"></div>
+    <div style="left: 83px; top: 175px; position: absolute; color: white; font-size: 12px; font-family: Noto Sans; font-weight: 500; word-wrap: break-word">Eco-Friendly</div>
+    <div style="left: 185px; top: 175px; position: absolute; color: white; font-size: 12px; font-family: Noto Sans; font-weight: 500; word-wrap: break-word">Harmful</div>
+    <div style="height: 96px; padding-right: 72px; left: 69px; top: 143px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
+        <div style="width: 42px; height: 96px"></div>
+    </div>
+    <div style="width: 15px; height: 14.99px; left: 61px; top: 176px; position: absolute; background: white"></div>
+    <div style="width: 200px; height: 257px; left: 48px; top: 216px; position: absolute; background: #4C4A49; border-radius: 10px"></div>
+</div>

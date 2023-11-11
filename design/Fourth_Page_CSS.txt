@@ -1,0 +1,27 @@
+// ECO 
+color: #FAFAFA;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// GLOW
+color: black;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Eco-Friendly
+color: white;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Harmful
+color: white;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 500;
+ word-wrap: break-word
