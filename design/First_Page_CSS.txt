@@ -1,0 +1,20 @@
+// ECO 
+color: #FAFAFA;
+ font-size: 36px;
+ font-family: Noto Sans;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// GLOW
+color: black;
+ font-size: 36px;
+ font-family: Noto Sans;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Analyze
+color: white;
+ font-size: 18px;
+ font-family: Noto Sans;
+ font-weight: 700;
+ word-wrap: break-word

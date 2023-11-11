@@ -1,0 +1,8 @@
+<div style="width: 100%; height: 100%; position: relative; background: #544F4F">
+    <div style="width: 217px; height: 269px; left: 40px; top: 62px; position: absolute; background: #D9D9D9; border-radius: 25px"></div>
+    <div style="width: 117px; left: 90px; top: 89px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Noto Sans; font-weight: 500; word-wrap: break-word">Sustainability <br/>Score</div>
+    <div style="width: 158px; height: 32px; left: 70px; top: 283px; position: absolute; background: #6AC56E; border-radius: 25px"></div>
+    <div style="width: 131px; height: 130px; left: 240.55px; top: 196.92px; position: absolute; transform: rotate(135deg); transform-origin: 0 0; background: black; border-radius: 9999px"></div>
+    <div style="left: 108px; top: 286px; position: absolute; color: white; font-size: 18px; font-family: Noto Sans; font-weight: 600; word-wrap: break-word">Summary</div>
+    <div style="left: 129px; top: 172px; position: absolute; text-align: center; color: black; font-size: 36px; font-family: Noto Sans; font-weight: 500; word-wrap: break-word">27</div>
+</div>

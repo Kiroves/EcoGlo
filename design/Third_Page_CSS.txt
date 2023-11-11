@@ -1,0 +1,20 @@
+// Sustainability <br/>Score
+color: black;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Summary
+color: white;
+ font-size: 18px;
+ font-family: Noto Sans;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// 27
+color: black;
+ font-size: 36px;
+ font-family: Noto Sans;
+ font-weight: 500;
+ word-wrap: break-word
