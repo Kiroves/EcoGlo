@@ -1,38 +1,32 @@
 const express = require('express')
 const axios = require('axios');
 const cheerio = require('cheerio');
+const cors = require('cors')
 
 const app = express()
+app.use(cors());
 const port = 3000
 
 app.get('/', (req, res) => {
 
-  const url = 'https://www.sephora.com/ca/en/product/sheer-skin-tint-with-hyaluronic-acid-squalane-P501777?skuId=2536183&icid2=products%20grid:p501777:product'
+  const url = 'https://www.sephora.com/ca/en/'
   
   axios.get(url).then((response) => {
-    console.log(response)
-    // Load the HTML content into Cheerio
-    // const $ = cheerio.load(response.data);
-
-    // // Find the element containing "Ingredients"
-    // const ingredientsElement = $('*:contains("Ingredients:")');
-
-    // // Check if the element is found
-    // if (ingredientsElement.length > 0) {
-    //   // Navigate to the next div to get the ingredients
-    //   const ingredients = ingredientsElement.next('div').text().trim();
-      
-    //   // Print or process the ingredients
-    //   console.log('Ingredients:', ingredients);
-    // } else {
-    //   console.log('Ingredients not found on the page.');
-    // }
+    res.status(200).json(response.data);
   })
-  .catch((error) => {
-    console.error('Error fetching the page:', error);
-  });
 
-  res.send('Hello World!')
+//   axios({
+//     url: url,
+//     method: "get",
+//     })
+//     .then(response => {
+//         res.status(200).json(response.data);
+//     })
+//     .catch((err) => {
+//         res.status(500).json({ message: err });
+//     });
+
+//   res.send('Hello World!')
 
 })
 
