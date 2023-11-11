@@ -18,9 +18,7 @@ async function scrapeProductInfo(url) {
   
     const brandName = await page.$eval('[data-at="brand_name"]', element => element.textContent)
     const productName= await page.$eval('[data-at="product_name"]', element => element.textContent);
-    console.log('Brand Name:', brandName);
-    console.log('Product Name:', productName);
-  
+
     const productPictureElements = await page.evaluate(() => {
       // Extract all picture tag elements
       const pictureTags = Array.from(document.querySelectorAll('picture'));
@@ -30,16 +28,12 @@ async function scrapeProductInfo(url) {
         const imgTags = Array.from(picture.querySelectorAll('img'));
         const productImgSrcs = imgTags.map(img => img.src).filter(src => src.includes('productimages'));
         return productImgSrcs[0];
-      }).filter((element) => {
-          console.log(element);
-          return element !== null;
-      });
+      })
   
       return pictureData;
     });
   
     const productPictureSrc = productPictureElements.find(element => element !== null && element !== undefined);
-    console.log(productPictureSrc);
   
     await browser.close();
 
