@@ -18,6 +18,10 @@ function getMatchingIngredients(ingredientsMap, ingredientsList) {
 
         ingredient = ingredient.replace(/[\[\]]/g, '');
 
+        ingredient = ingredient.replace(/\(.*/, '');
+
+        ingredient = ingredient.trim();
+
         // remove may contain: or may contain / peut contenir
 
         // remove from May Contain to (+/-\)
