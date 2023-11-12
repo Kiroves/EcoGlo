@@ -32,14 +32,15 @@ function App() {
 
     chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
       let url = tabs[0].url;
+      const currentTabId = tabs[0].id;
 
       const res = await chrome.scripting.executeScript({
-        target: {tabId: tabs[0].id},
+        target: {tabId: currentTabId},
         func: queryDom,
       });
 
       const seph = await chrome.scripting.executeScript({
-        target: {tabId: tabs[0].id},
+        target: {tabId: currentTabId},
         func: querySeph,
       });
 
