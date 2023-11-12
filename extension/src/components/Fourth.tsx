@@ -6,7 +6,7 @@ export const Fourth = () => {
     <div className="main-4">
         <div className = "heading">
             <header>
-            <div className="logo">
+            <div className="logo-4">
             ECO
             </div>
             GLO
@@ -18,7 +18,8 @@ export const Fourth = () => {
                     <img className="image-4-1"alt = "img_of_beauty_product" src="https://www.sephora.com/productimages/sku/s2536183-main-zoom.jpg?imwidth=315"></img>
                 </div>
                 <div className="score-4">
-                   5.6
+                   <div className="score">5.6</div>
+                   <div className="subtitle">Sustainability Score</div>
                 </div>
             </div>
             <div className="line">

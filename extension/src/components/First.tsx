@@ -7,7 +7,7 @@ interface FirstProps {
 export const First: React.FC<FirstProps> = ({ onAnalyzeClick }) => {
   return (
     <div className="main">
-      <header>
+      <header className="header-1">
         <div className="logo">
           ECO
         </div>
