@@ -2,12 +2,9 @@
 function getMatchingIngredients(ingredientsMap, ingredientsList) {
     // see which ingredients in ingredients list are in ingredients map
 
-    // loop through ingredientsList if
-    ingredientsList.push('May Contain: Titanium Dioxide');
-    ingredientsList.push('Ferric Ferrocyanide]');
-
-    let containsList = [];
     let missingList = [];
+    let sustainableList = [];
+    let unsustainableList = [];
 
     ingredientsList.forEach(el => {
         // remove anything in btwn ()
@@ -33,7 +30,11 @@ function getMatchingIngredients(ingredientsMap, ingredientsList) {
         // May Contain: Titanium Dioxide, Iron Oxides, Mica.
 
         if (ingredient in ingredientsMap) {
-            containsList.push(ingredientsMap[ingredient]);
+            if (ingredientsMap[ingredient].score > 5) {
+                sustainableList.push(ingredientsMap[ingredient]);
+            } else {
+                unsustainableList.push(ingredientsMap[ingredient]);
+            }
         } else {
             missingList.push(ingredient);
         }
@@ -41,7 +42,8 @@ function getMatchingIngredients(ingredientsMap, ingredientsList) {
     });
 
     return {
-        containsList,
+        sustainableList,
+        unsustainableList,
         missingList,
     }
 }
