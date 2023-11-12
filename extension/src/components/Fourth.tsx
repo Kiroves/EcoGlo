@@ -33,16 +33,16 @@ export const Fourth: React.FC<FourthProps> = ({ sustainableList, unsustainableLi
             </div>
             <div className="lower-container">
                 <div className="product-description">
-                        <h3>Good Ingredients:</h3>
+                        <h2>Good Ingredients:</h2>
 
                         { sustainableList.map((sus) => {
-                            return <div className="ing-item" key={sus._name}>{sus._name} ({sus._score}): {sus._reason}</div>
+                            return <div className="ing-item" key={sus._name}><strong>{sus._name} ({sus._score})</strong>: {sus._reason}</div>
                         }) }
 
-                        <h3>Bad Ingredients:</h3>
+                        <h2>Bad Ingredients:</h2>
                         
                         { unsustainableList.map((sus) => {
-                            return <div className="ing-item" key={sus._name}>{sus._name} ({sus._score}): {sus._reason}</div>
+                            return <div className="ing-item" key={sus._name}><strong>{sus._name} ({sus._score})</strong>: {sus._reason}</div>
                         }) }
                 </div>
             </div>
