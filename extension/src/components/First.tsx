@@ -1,7 +1,10 @@
 import React from "react";
 import "./First.css";
+interface FirstProps {
+  onAnalyzeClick: () => void;
+}
 
-export const First = () => {
+export const First: React.FC<FirstProps> = ({ onAnalyzeClick }) => {
   return (
     <div className="main">
       <header>
@@ -22,7 +25,7 @@ export const First = () => {
         </div>
       </div>
       <div className = "button">
-        <button>Analyze</button>
+      <button onClick={() => onAnalyzeClick()}>Analyze</button>
       </div>
     </div>
   );

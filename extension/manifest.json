@@ -7,7 +7,7 @@
       "default_popup": "/dist/js/index.html",
       "default_icon": "/src/logo.svg"
     },
-    "host_permissions": ["https://api.quotable.io/*"],
+    "host_permissions": ["https://api.quotable.io/*", "http://localhost:3000/"],
     "permissions": [
         "scripting",
         "activeTab"

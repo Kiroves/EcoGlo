@@ -5,6 +5,7 @@ const sustainableIngredients = require('./list');
 const calculateAverage = require('./calcualte');
 const getMatchingIngredients = require('./analyze');
 const app = express()
+app.use(express.json());
 const port = 3000
 
 const IngredientsMap = {};
@@ -23,6 +24,10 @@ app.get('/', async (req, res) => {
   const ret = getMatchingIngredients(IngredientsMap, ingredientsList);
   console.log(ret);
 })
+
+app.post('/submit', (req, res) => {
+    console.log(req.body);
+  });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
