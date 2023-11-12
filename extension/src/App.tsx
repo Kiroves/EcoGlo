@@ -11,7 +11,7 @@ function queryDom() {
 }
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState<number>(1);
+  const [activeComponent, setActiveComponent] = useState<number>(4);
   const [imageURL, setImageURL] = useState<string>("");
   const [brandName, setBrandName] = useState<string>("");
   const [productName, setProductName] = useState<string>("");
@@ -67,7 +67,7 @@ function App() {
       } catch (error) {
         console.error('Error:', error.message);
       }
-      
+
       setImageURL('sss');
 
       setImageURL(seph[0].result.imageURL);
