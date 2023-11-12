@@ -2,6 +2,7 @@ const express = require('express')
 const utils = require('./util');
 const scrapeProductInfo = require('./scrape');
 const sustainableIngredients = require('./list');
+const calculateAverage = require('./calcualte');
 const app = express()
 const port = 3000
 
@@ -10,7 +11,7 @@ const IngredientsMap = {};
 for (const ingredient of sustainableIngredients) {
   IngredientsMap[ingredient.name] = ingredient;
 }
-console.log(IngredientsMap);
+console.log(calculateAverage(sustainableIngredients));
 
 
 app.get('/', async (req, res) => {
