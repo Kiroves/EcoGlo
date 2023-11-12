@@ -32,16 +32,21 @@ function App() {
 
     chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
       let url = tabs[0].url;
+      const currentTabId = tabs[0].id;
 
       const res = await chrome.scripting.executeScript({
-        target: {tabId: tabs[0].id},
+        target: {tabId: currentTabId},
         func: queryDom,
       });
 
       const seph = await chrome.scripting.executeScript({
-        target: {tabId: tabs[0].id},
+        target: {tabId: currentTabId},
         func: querySeph,
       });
+
+      setImageURL(seph[0].result.imageURL);
+      setBrandName(seph[0].result.brandName);
+      setProductName(seph[0].result.productName);
 
       try {
         const response = await fetch(fetchTestURL, {
@@ -67,12 +72,6 @@ function App() {
       } catch (error) {
         console.error('Error:', error.message);
       }
-
-      setImageURL('sss');
-
-      setImageURL(seph[0].result.imageURL);
-      setBrandName(seph[0].result.brandName);
-      setProductName(seph[0].result.productName);
     });
   };
 
@@ -94,10 +93,6 @@ function App() {
   return (
     <div className="App">
       {renderComponent()}
-      {/*<p>dsds</p>
-      <p>{imageURL}</p>
-      <p>{brandName}</p>
-      <p>{productName}</p>*/}
     </div>
   );
 }
