@@ -1,17 +1,32 @@
 .container {
-  background-color: #d9d9d9;
-  /* padding: 20px 50px; */
-  text-align: center
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+}
+
+.main {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px
 }
 
 header {
+  margin-top: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 42px;
-  font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   gap: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 200px;
 }
 
 .logo {
@@ -23,4 +38,33 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+button {
+  background-color: #69c46d;
+  border-radius: 25px;
+  border: none;
+  height: 40px;
+  width: 155px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.product {
+  font-size: 16px;
+  width: 250px;
 }
