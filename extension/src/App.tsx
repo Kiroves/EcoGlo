@@ -4,7 +4,7 @@ import { Second } from './components/Second';
 import './App.css'
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState(2);
+  const [activeComponent, setActiveComponent] = useState(1);
 
   const renderComponent = () => {
     switch (activeComponent) {
