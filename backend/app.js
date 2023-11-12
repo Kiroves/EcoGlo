@@ -23,7 +23,12 @@ app.post('/submit', async (req, res) => {
   const ingredientsList = utils.getIngredientsList(ingredients);
   const {sustainableList, unsustainableList, missingList} = getMatchingIngredients(IngredientsMap, ingredientsList);
   const average = calculateAverage(sustainableList, unsustainableList);
-  res.json({sustainableList, unsustainableList, average})
+  if (isNaN(average)) {
+    const temp = 5
+    res.json({ sustainableList, unsustainableList, temp })
+  } else {
+    res.json({ sustainableList, unsustainableList, average })
+  }
   //console.log(sustainableList)
   //console.log(unsustainableList)
   //console.log(missingList)
