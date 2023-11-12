@@ -13,7 +13,7 @@ const IngredientsMap = {};
 for (const ingredient of sustainableIngredients) {
   IngredientsMap[ingredient.name] = ingredient;
 }
-const average = calculateAverage(sustainableIngredients);
+
 
 app.post('/submit', async (req, res) => {
   const dom = req.body.dom
@@ -21,8 +21,9 @@ app.post('/submit', async (req, res) => {
   const boldText = 'Clean at Sephora products are formulated without the following banned or restricted ingredients (please see Clean at Sephora landing page for full list of specific restrictions and allowances by category—this is not an exhaustive list):'
   const ingredients = utils.splitString(productInfo, boldText);
   const ingredientsList = utils.getIngredientsList(ingredients);
-  const ret = getMatchingIngredients(IngredientsMap, ingredientsList);
-  console.log(ret);
+  const average = calculateAverage(ingredientsList);
+  const {sustainableList, unsustainableList, missingList} = getMatchingIngredients(IngredientsMap, ingredientsList);
+  res.json({sustainableList, unsustainableList, average})
   });
 
 app.listen(port, () => {
