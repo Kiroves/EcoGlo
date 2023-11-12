@@ -3,17 +3,6 @@ import "./First.css";
 
 export const First = () => {
   return (
-<<<<<<< HEAD
-    <div className="a">
-      <div className="div">
-        <div className="rectangle" />
-        <div className="overlap-group">
-          <div className="rectangle-2" />
-          <div className="rectangle-3" />
-          <div className="overlap">
-            <div className="text-wrapper">Analyze</div>
-          </div>
-=======
     <div className="main">
       <header>
         <div className="logo">
@@ -30,7 +19,6 @@ export const First = () => {
         </div>
         <div className = "product">
           Sheer Skin Tint with Hyaluronic Acid + Squalane
->>>>>>> ca42ccc673ea32f5c9e35b8e4c768a93b820fab5
         </div>
       </div>
       <div className = "button">
