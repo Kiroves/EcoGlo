@@ -24,6 +24,10 @@ app.post('/submit', async (req, res) => {
   const {sustainableList, unsustainableList, missingList} = getMatchingIngredients(IngredientsMap, ingredientsList);
   const average = calculateAverage(sustainableList, unsustainableList);
   res.json({sustainableList, unsustainableList, average})
+  //console.log(sustainableList)
+  //console.log(unsustainableList)
+  //console.log(missingList)
+  //console.log(average)
   });
 
 app.listen(port, () => {

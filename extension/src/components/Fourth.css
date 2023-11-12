@@ -33,7 +33,7 @@
     margin-top: 10px;
     background-color: #d9d9d9;
     border-radius: 10px;
-    height: inherit
+    height: 300px;
 }
 
 .upper-container {
@@ -42,16 +42,20 @@
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
+    gap: 10px;
 }
 .image-4 {
     height: 100px;
-    width: 150px;
+    width: 140px;
 }
 .image-4-1 {
-    width: 100px;
+    max-width: 140px;
+    height: 100px;
     border-radius: 25px;
 }
 .score-4{
+    border-radius: 25px;
+    background-color: white;
     height: 100px;
     width: 150px;
     font-family: 'Noto Sans', sans-serif;
@@ -84,15 +88,49 @@
     width: 80px;
 }
 
+.outerlowercontainer {
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+    padding-bottom: 5px;
+    background: #4C4A49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .product-description {
     text-align: left;
+    padding-top: 12px;
     padding-left: 12px;
     font-size: 14px;
-    overflow: scroll;
-    padding-bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
+    width: 280px;
+    border-radius: 10px;
+    height: 100%;
 }
 
-.ing-item {
-    margin-bottom: 5px;
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
+.tabs button {
+    width: 94px;
+    height: 10px;
+    background: #7A7776;
+    border: none;
+    height: 40px;
+    width: 140px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 25% 25% 0% 0%;
+}
+
+button.selected {
+    background: #4C4A49;
+}
