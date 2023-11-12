@@ -15,7 +15,6 @@ function getIngredientsList(str) {
     var ingredients = [];
     split = str.split('.');
     split.pop();
-    console.log(split);
 
     for (i = 0; i < split.length; i++) {
         if (i !== split.length - 1) {

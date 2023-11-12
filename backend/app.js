@@ -16,7 +16,7 @@ const average = calculateAverage(sustainableIngredients);
 
 
 app.get('/', async (req, res) => {
-  const productInfo = await scrapeProductInfo('https://www.sephora.com/ca/en/product/sheer-skin-tint-with-hyaluronic-acid-squalane-P501777?skuId=2536183&icid2=products%20grid:p50177');
+  const productInfo = await scrapeProductInfo('https://www.sephora.com/ca/en/product/hydro-grip-primer-dewy-setting-spray-makeup-set-P507133?icid2=homepage_productlist_brandnewadditions_ca_rwd_092022');
   const boldText = 'Clean at Sephora products are formulated without the following banned or restricted ingredients (please see Clean at Sephora landing page for full list of specific restrictions and allowances by category—this is not an exhaustive list):'
   const ingredients = utils.splitString(productInfo.ingredients, boldText);
   const ingredientsList = utils.getIngredientsList(ingredients);
