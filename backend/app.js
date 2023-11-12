@@ -3,6 +3,7 @@ const utils = require('./util');
 const scrapeProductInfo = require('./scrape');
 const sustainableIngredients = require('./list');
 const calculateAverage = require('./calcualte');
+const getMatchingIngredients = require('./analyze');
 const app = express()
 const port = 3000
 
@@ -19,7 +20,8 @@ app.get('/', async (req, res) => {
   const boldText = 'Clean at Sephora products are formulated without the following banned or restricted ingredients (please see Clean at Sephora landing page for full list of specific restrictions and allowances by category—this is not an exhaustive list):'
   const ingredients = utils.splitString(productInfo.ingredients, boldText);
   const ingredientsList = utils.getIngredientsList(ingredients);
-  console.log(ingredientsList);
+  const ret = getMatchingIngredients(IngredientsMap, ingredientsList);
+  console.log(ret);
 })
 
 app.listen(port, () => {

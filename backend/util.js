@@ -46,21 +46,3 @@ module.exports = {
     splitString,
     getIngredientsList,
 };
-
-// Your input string
-let inputString = "- test: example";
-
-// Define the pattern using regular expression
-let pattern = /-(.*?):/;
-
-// Use the exec method to find the first match
-let match = pattern.exec(inputString);
-
-// Check if a match is found
-if (match) {
-    // Extract the text between "-" and ":"
-    let extractedText = match[1].trim();  // Trim to remove leading/trailing spaces
-    console.log("Extracted text:", extractedText);
-} else {
-    console.log("No match found.");
-}
