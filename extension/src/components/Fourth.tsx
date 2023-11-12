@@ -1,7 +1,14 @@
 import React from "react";
 import "./Fourth.css";
 
-export const Fourth = () => {
+interface FourthProps {
+    sustainableList: Array<any>;
+    unsustainableList: Array<any>;
+    score: number;
+    imgUrl: string;
+}
+
+export const Fourth: React.FC<FourthProps> = ({ sustainableList, unsustainableList, score, imgUrl }) => {
   return (
     <div className="main-4">
         <div className = "heading">
@@ -15,10 +22,10 @@ export const Fourth = () => {
         <div className="main-container">
             <div className="upper-container">
                 <div className="image-4">
-                    <img className="image-4-1"alt = "img_of_beauty_product" src="https://www.sephora.com/productimages/sku/s2536183-main-zoom.jpg?imwidth=315"></img>
+                    <img className="image-4-1"alt = "img_of_beauty_product" src={imgUrl}></img>
                 </div>
                 <div className="score-4">
-                   <div className="score">5.6</div>
+                   <div className="score">{ score }</div>
                    <div className="subtitle">Sustainability Score</div>
                 </div>
             </div>
@@ -26,7 +33,17 @@ export const Fourth = () => {
             </div>
             <div className="lower-container">
                 <div className="product-description">
-                    hello
+                        <h3>Good Ingredients:</h3>
+
+                        { sustainableList.map((sus) => {
+                            return <div className="ing-item" key={sus._name}>{sus._name} ({sus._score}): {sus._reason}</div>
+                        }) }
+
+                        <h3>Bad Ingredients:</h3>
+                        
+                        { unsustainableList.map((sus) => {
+                            return <div className="ing-item" key={sus._name}>{sus._name} ({sus._score}): {sus._reason}</div>
+                        }) }
                 </div>
             </div>
         </div>

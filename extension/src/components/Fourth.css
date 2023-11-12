@@ -10,7 +10,6 @@
     background-color: white;
     width: 300px;
     flex-shrink: 0;
-    border-bottom:1px solid #4c4a49;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -74,7 +73,6 @@
 
 .lower-container {
     background-color: white;
-    border-radius: 10px;
     margin-top: 10px;
     height: 100%;
 }
@@ -84,5 +82,17 @@
     background-color: #4c4a49;
     height: 80px;
     width: 80px;
+}
+
+.product-description {
+    text-align: left;
+    padding-left: 12px;
+    font-size: 14px;
+    overflow: scroll;
+    padding-bottom: 5px;
+}
+
+.ing-item {
+    margin-bottom: 5px;
 }
 

@@ -2,9 +2,10 @@ import "./Third.css";
 
 interface ThirdProps {
   score: number;
+  onSummaryClick: () => void;
 }
 
-export const Third: React.FC<ThirdProps> = ({ score }) => {
+export const Third: React.FC<ThirdProps> = ({ score, onSummaryClick }) => {
   const percentage = score;
 
   const greenValue = Math.min(255, Math.floor((percentage / 10) * 255));
@@ -28,7 +29,7 @@ export const Third: React.FC<ThirdProps> = ({ score }) => {
         </div>
       </div>
       <div className = "button-3">
-        <button>Summary</button>
+        <button onClick={() => onSummaryClick()}>Summary</button>
       </div>
     </div>
   );
