@@ -34,7 +34,9 @@ header {
 }
 
 img {
-  width: 200px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
 }
 
 .logo {
