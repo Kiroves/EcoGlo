@@ -48,6 +48,10 @@ function App() {
     return {imageURL: img, brandName: bname, productName: pname };
   }
 
+  const handleSummaryClick = () => {
+    setActiveComponent(4);
+  }
+
   const handleAnalyzeClick = async () => {
     setActiveComponent(2);
     const fetchTestURL = 'http://localhost:3000/submit';
@@ -100,9 +104,10 @@ function App() {
         return <Second />;
       case 3:
         // @ts-ignore
-        return <Third score={summary.average}/>;
+        return <Third onSummaryClick={handleSummaryClick} score={summary.average}/>;
       case 4:
-        return <Fourth />;
+        // @ts-ignore
+        return <Fourth sustainableList={summary.sustainableList} unsustainableList={summary.unsustainableList} score={summary.average} imgUrl={imageURL}/>;
       default:
         return null; // Render nothing if the state doesn't match any case
     }
