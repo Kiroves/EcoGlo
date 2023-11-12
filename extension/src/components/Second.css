@@ -1,0 +1,266 @@
+.a {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+  
+.a .overlap-group-wrapper {
+background-color: #ffffff;
+height: 516px;
+overflow: hidden;
+width: 297px;
+}
+
+.a .overlap-group {
+height: 545px;
+left: -40px;
+position: relative;
+top: -29px;
+width: 339px;
+}
+
+.a .rectangle {
+background-color: #d9d9d9;
+height: 42px;
+left: 40px;
+position: absolute;
+top: 29px;
+width: 297px;
+}
+
+.a .frame {
+height: 57px;
+left: 0;
+position: absolute;
+top: 0;
+width: 85px;
+}
+
+.a .div {
+background-color: #69c46d;
+border-radius: 0px 14px 0px 14px;
+height: 28px;
+left: 48px;
+position: relative;
+top: 35px;
+width: 40px;
+}
+
+.a .ECO-GLOW {
+color: transparent;
+font-family: "Noto Sans-ExtraBold", Helvetica;
+font-size: 16px;
+font-weight: 800;
+left: 56px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+top: 39px;
+width: 85px;
+}
+
+.a .text-wrapper {
+color: #fafafa;
+}
+
+.a .span {
+color: #000000;
+}
+
+.a .line {
+height: 18px;
+left: 303px;
+position: absolute;
+top: 41px;
+width: 18px;
+}
+
+.a .rectangle-2 {
+background-color: #d9d9d9;
+border-radius: 25px;
+height: 337px;
+left: 73px;
+position: absolute;
+top: 184px;
+width: 231px;
+}
+
+.a .rectangle-3 {
+background-color: #d9d9d9;
+border-radius: 25px;
+height: 83px;
+left: 73px;
+position: absolute;
+top: 86px;
+width: 231px;
+}
+
+.a .rectangle-4 {
+background-color: #69c46d;
+border-radius: 25px;
+height: 24px;
+left: 88px;
+position: absolute;
+top: 200px;
+width: 114px;
+}
+
+.a .rectangle-5 {
+background-color: #d84545;
+border-radius: 25px;
+height: 24px;
+left: 208px;
+position: absolute;
+top: 200px;
+width: 80px;
+}
+
+.a .rectangle-6 {
+background-color: #4c4a49;
+border-radius: 10px;
+height: 58px;
+left: 88px;
+position: absolute;
+top: 97px;
+width: 73px;
+}
+
+.a .rectangle-7 {
+background-color: #4c4a49;
+border-radius: 10px;
+height: 58px;
+left: 168px;
+position: absolute;
+top: 97px;
+width: 120px;
+}
+
+.a .text-wrapper-2 {
+color: #ffffff;
+font-family: "Noto Sans-DisplayMedium", Helvetica;
+font-size: 12px;
+font-weight: 500;
+left: 123px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+top: 203px;
+}
+
+.a .text-wrapper-3 {
+color: #ffffff;
+font-family: "Noto Sans-DisplayMedium", Helvetica;
+font-size: 12px;
+font-weight: 500;
+left: 225px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+top: 203px;
+}
+
+.a .eco {
+height: 96px;
+left: 109px;
+position: absolute;
+top: 172px;
+width: 96px;
+}
+
+.a .group {
+height: 15px;
+left: 101px;
+position: absolute;
+top: 205px;
+width: 15px;
+}
+
+.a .rectangle-8 {
+background-color: #4c4a49;
+border-radius: 10px;
+height: 265px;
+left: 88px;
+position: absolute;
+top: 237px;
+width: 200px;
+}
+
+.a .rectangle-9 {
+background-color: #1f1d1c99;
+height: 516px;
+left: 40px;
+position: absolute;
+top: 29px;
+width: 299px;
+}
+
+.a .rectangle-10 {
+background-color: #d9d9d9;
+border-radius: 25px;
+height: 269px;
+left: 81px;
+position: absolute;
+top: 97px;
+width: 217px;
+}
+
+.a .sustainability-score {
+color: #000000;
+font-family: "Noto Sans-DisplayMedium", Helvetica;
+font-size: 12px;
+font-weight: 500;
+height: 32px;
+left: 131px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+text-align: center;
+top: 123px;
+width: 117px;
+}
+
+.a .rectangle-11 {
+background-color: #69c46d;
+border-radius: 25px;
+height: 32px;
+left: 111px;
+position: absolute;
+top: 318px;
+width: 158px;
+}
+
+.a .ellipse {
+height: 110px;
+left: 124px;
+position: absolute;
+top: 167px;
+width: 131px;
+}
+
+.a .text-wrapper-4 {
+color: #ffffff;
+font-family: "Noto Sans-DisplaySemiBold", Helvetica;
+font-size: 18px;
+font-weight: 600;
+left: 149px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+top: 320px;
+}
+
+.a .text-wrapper-5 {
+color: #000000;
+font-family: "Noto Sans-DisplayMedium", Helvetica;
+font-size: 36px;
+font-weight: 500;
+height: 49px;
+left: 170px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+text-align: center;
+top: 206px;
+}

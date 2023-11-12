@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "EcoGlo",
+    "description": "ECO GLOW",
+    "version": "1.0",
+    "action": {
+      "default_popup": "/popup/index.html",
+      "default_icon": "/images/icon32.png"
+    },
+    "host_permissions": ["https://api.quotable.io/*"],
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ]
+}
