@@ -21,8 +21,9 @@ app.post('/submit', async (req, res) => {
   const boldText = 'Clean at Sephora products are formulated without the following banned or restricted ingredients (please see Clean at Sephora landing page for full list of specific restrictions and allowances by category—this is not an exhaustive list):'
   const ingredients = utils.splitString(productInfo, boldText);
   const ingredientsList = utils.getIngredientsList(ingredients);
-  const average = calculateAverage(ingredientsList);
   const {sustainableList, unsustainableList, missingList} = getMatchingIngredients(IngredientsMap, ingredientsList);
+  const average = calculateAverage(sustainableList, unsustainableList);
+  console.log(average)
   res.json({sustainableList, unsustainableList, average})
   });
 

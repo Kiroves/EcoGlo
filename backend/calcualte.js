@@ -1,8 +1,11 @@
 
-function calculateAverage(IngredientArray) {;
+function calculateAverage(sustainableList, unsustainableList) {;
     let total = 0
-    const length = IngredientArray.length
-    for (const ingredient of IngredientArray) {
+    const length = sustainableList.length + unsustainableList.length
+    for (const ingredient of sustainableList) {
+        total += ingredient._score
+    }
+    for (const ingredient of unsustainableList) {
         total += ingredient._score
     }
     const average = total/length
