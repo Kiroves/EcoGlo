@@ -93,7 +93,6 @@ function App() {
   return (
     <div className="App">
       {renderComponent()}
-      <p>{productName}</p>
     </div>
   );
 }
