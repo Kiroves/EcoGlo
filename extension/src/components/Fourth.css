@@ -80,7 +80,6 @@
 }
 
 .lower-container {
-    background-color: white;
     margin-top: 10px;
     height: 100%;
 }
@@ -96,6 +95,7 @@
     border-radius: 0 0 10px 10px;
     height: 100%;
     padding-bottom: 5px;
+    padding-top: 5px;
     background: #4C4A49;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@
     background: #7A7776;
     border: none;
     height: 40px;
-    width: 140px;
+    width: 150px;
     color: white;
     font-weight: 500;
     font-size: 15px;
@@ -137,4 +137,8 @@
 
 button.selected {
     background: #4C4A49;
+}
+
+button.unselected {
+    height: 35px;
 }
