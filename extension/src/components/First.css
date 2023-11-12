@@ -67,6 +67,11 @@ button {
   font-size: 20px;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #5cad60;
+}
+
 .brand {
   font-weight: 700;
   font-size: 24px;

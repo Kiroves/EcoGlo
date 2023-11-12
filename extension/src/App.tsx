@@ -1,5 +1,5 @@
     /*global chrome*/
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { First } from './components/First';
 import { Second } from './components/Second';
 import { Third } from './components/Third';
@@ -16,10 +16,27 @@ function App() {
   const [brandName, setBrandName] = useState<string>("");
   const [productName, setProductName] = useState<string>("");
 
+  useEffect(() => {
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
+      const currentTabId = tabs[0].id;
+
+      const seph = await chrome.scripting.executeScript({
+        target: {tabId: currentTabId},
+        func: querySeph,
+      });
+
+      setImageURL(seph[0].result.imageURL);
+      setBrandName(seph[0].result.brandName);
+      setProductName(seph[0].result.productName);
+    });
+  }, []);
+
   function querySeph() {
-    const pictures = document.querySelectorAll('picture');
+    let pictures = document.querySelectorAll('picture.css-yq9732');
+
+    const imgTag = pictures[0].querySelector('img');
   
-    const img = pictures[0].querySelector('img').src;
+    const img = imgTag.src;
     const bname = document.querySelector('[data-at="brand_name"]').innerHTML;
     const pname = document.querySelector('[data-at="product_name"]').innerHTML;
   
@@ -78,7 +95,7 @@ function App() {
   const renderComponent = () => {
     switch (activeComponent) {
       case 1:
-        return <First onAnalyzeClick={handleAnalyzeClick} />;
+        return <First onAnalyzeClick={handleAnalyzeClick} productName={productName} brandName={brandName} imgUrl={imageURL} />;
       case 2:
         return <Second />;
       case 3:

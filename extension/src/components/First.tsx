@@ -2,9 +2,12 @@ import React from "react";
 import "./First.css";
 interface FirstProps {
   onAnalyzeClick: () => void;
+  productName: string;
+  brandName: string;
+  imgUrl: string;
 }
 
-export const First: React.FC<FirstProps> = ({ onAnalyzeClick }) => {
+export const First: React.FC<FirstProps> = ({ onAnalyzeClick, productName, brandName, imgUrl  }) => {
   return (
     <div className="main">
       <header className="header-1">
@@ -14,14 +17,14 @@ export const First: React.FC<FirstProps> = ({ onAnalyzeClick }) => {
         GLO
       </header>
       <div className = "img">
-        <img alt = "img_of_beauty_product" src="https://www.sephora.com/productimages/sku/s2536183-main-zoom.jpg?imwidth=315"></img>
+        <img alt = "img_of_beauty_product" src={imgUrl}></img>
       </div>
       <div className = "text">
         <div className = "brand">
-          Summer Fridays
+          { brandName }
         </div>
         <div className = "product">
-          Sheer Skin Tint with Hyaluronic Acid + Squalane
+          { productName }
         </div>
       </div>
       <div className = "button">
