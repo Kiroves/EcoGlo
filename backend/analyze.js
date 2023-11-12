@@ -22,6 +22,8 @@ function getMatchingIngredients(ingredientsMap, ingredientsList) {
 
         ingredient = ingredient.trim();
 
+        ingredient = ingredient.replace(/\s{2,}/g, ' ');
+
         // remove may contain: or may contain / peut contenir
 
         // remove from May Contain to (+/-\)
@@ -29,7 +31,6 @@ function getMatchingIngredients(ingredientsMap, ingredientsList) {
         // remove may contain:
 
         // May Contain: Titanium Dioxide, Iron Oxides, Mica.
-        console.log(ingredient);
 
         if (ingredient in ingredientsMap) {
             containsList.push(ingredientsMap[ingredient]);
