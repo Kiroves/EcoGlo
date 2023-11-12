@@ -1,7 +1,7 @@
 import React from "react";
 import "./Fourth.css";
 
-export const Second = () => {
+export const Fourth = () => {
   return (
     <div className="main">
         <header>EcoGlo</header>
