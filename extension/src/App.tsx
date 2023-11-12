@@ -33,9 +33,13 @@ function App() {
   }, []);
 
   function querySeph() {
-    let pictures = document.querySelectorAll('picture.css-yq9732');
+    //let pictures = document.querySelectorAll('picture.css-yq9732');
 
-    const imgTag = pictures[0].querySelector('img');
+    let imgTag = document.querySelector('foreignObject img') as HTMLImageElement;
+
+    if (!imgTag) {
+      imgTag = document.querySelector('picture.css-yq9732 img') as HTMLImageElement;
+    }
   
     const img = imgTag.src;
     const bname = document.querySelector('[data-at="brand_name"]').innerHTML;
