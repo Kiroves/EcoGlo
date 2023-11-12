@@ -1,219 +1,26 @@
-/* .a {
-    background-color: #d9d9d9;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .a .div {
-    background-color: #d9d9d9;
-    height: 420px;
-    position: relative;
-    width: 297px;
-  }
-  
-  .a .frame {
-    height: 57px;
-    left: 52px;
-    position: absolute;
-    top: 17px;
-    width: 194px;
-  }
-  
-  .a .overlap-group {
-    height: 57px;
-    position: relative;
-  }
-  
-  .a .rectangle {
-    background-color: #69c46d;
-    border-radius: 0px 35px 0px 35px;
-    height: 57px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 85px;
-  }
-  
-  .a .ECO-GLOW {
-    color: transparent;
-    font-family: "Noto Sans-ExtraBold", Helvetica;
-    font-size: 36px;
-    font-weight: 800;
-    left: 12px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 3px;
-  }
-  
-  .a .text-wrapper {
-    color: #fafafa;
-  }
-  
-  .a .span {
-    color: #000000;
-  }
-  
-  .a .overlap {
-    background-color: #ffffff;
-    border-radius: 10px;
-    height: 299px;
-    left: 52px;
-    position: absolute;
-    top: 98px;
-    width: 194px;
-  }
-  
-  .a .rectangle-2 {
-    background-color: #4c4a49;
-    border-radius: 10px;
-    height: 73px;
-    left: 20px;
-    position: absolute;
-    top: 157px;
-    width: 155px;
-  }
-  
-  .a .rectangle-3 {
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    height: 122px;
-    left: 20px;
-    position: absolute;
-    top: 19px;
-    width: 155px;
-  }
-  
-  .a .div-wrapper {
-    background-color: #69c46d;
-    border-radius: 25px;
-    height: 37px;
-    left: 20px;
-    position: absolute;
-    top: 251px;
-    width: 155px;
-  }
-  
-  .a .text-wrapper-2 {
-    color: #ffffff;
-    font-family: "Noto Sans-DisplayBold", Helvetica;
-    font-size: 16px;
-    font-weight: 700;
-    left: 46px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 7px;
-  } */
-
-  .a {
-    background-color: #d9d9d9;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.container {
+  background-color: #d9d9d9;
+  /* padding: 20px 50px; */
+  text-align: center
 }
 
-.a .div {
-    background-color: #d9d9d9;
-    height: 210px;
-    position: relative;
-    width: 148.5px;
+header {
+  display: flex;
+  align-items: center;
+  font-size: 42px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
-.a .frame {
-    height: 28.5px;
-    left: 26px;
-    position: absolute;
-    top: 8.5px;
-    width: 97px;
-}
-
-.a .overlap-group {
-    height: 28.5px;
-    position: relative;
-}
-
-.a .rectangle {
-    background-color: #69c46d;
-    border-radius: 0px 17.5px 0px 17.5px;
-    height: 28.5px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 42.5px;
-}
-
-.a .ECO-GLOW {
-    color: transparent;
-    font-family: "Noto Sans-ExtraBold", Helvetica;
-    font-size: 18px;
-    font-weight: 400;
-    left: 6px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 1.5px;
-}
-
-.a .text-wrapper {
-    color: #fafafa;
-}
-
-.a .span {
-    color: #000000;
-}
-
-.a .overlap {
-    background-color: #ffffff;
-    border-radius: 5px;
-    height: 149.5px;
-    left: 26px;
-    position: absolute;
-    top: 49px;
-    width: 97px;
-}
-
-.a .rectangle-2 {
-    background-color: #4c4a49;
-    border-radius: 5px;
-    height: 36.5px;
-    left: 10px;
-    position: absolute;
-    top: 78.5px;
-    width: 77.5px;
-}
-
-.a .rectangle-3 {
-    background-color: #d9d9d9;
-    border-radius: 5px;
-    height: 61px;
-    left: 10px;
-    position: absolute;
-    top: 9.5px;
-    width: 77.5px;
-}
-
-.a .div-wrapper {
-    background-color: #69c46d;
-    border-radius: 12.5px;
-    height: 18.5px;
-    left: 10px;
-    position: absolute;
-    top: 125.5px;
-    width: 77.5px;
-}
-
-.a .text-wrapper-2 {
-    color: #ffffff;
-    font-family: "Noto Sans-DisplayBold", Helvetica;
-    font-size: 8px;
-    font-weight: 350;
-    left: 23px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 3.5px;
+.logo {
+  background-color: #69c46d;
+  border-radius: 0px 35px 0px 35px;
+  height: 70px;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }

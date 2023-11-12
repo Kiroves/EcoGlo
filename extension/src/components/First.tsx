@@ -3,24 +3,15 @@ import "./First.css";
 
 export const First = () => {
   return (
-    <div className="a">
-      <div className="div">
-        <div className="frame">
-          <div className="overlap-group">
-            <div className="rectangle" />
-            <p className="ECO-GLOW">
-              <span className="text-wrapper">ECO </span>
-              <span className="span">GLOW</span>
-            </p>
-          </div>
+    <div className="main">
+      <header>
+        <div className="logo">
+          ECO
         </div>
-        <div className="overlap">
-          <div className="rectangle-2" />
-          <div className="rectangle-3" />
-          <div className="div-wrapper">
-            <div className="text-wrapper-2">Analyze</div>
-          </div>
-        </div>
+        GLO
+      </header>
+      <div className="content">
+        {/* <img src="https://www.sephora.com/productimages/sku/s2536183-main-zoom.jpg?imwidth=315"></img> */}
       </div>
     </div>
   );
