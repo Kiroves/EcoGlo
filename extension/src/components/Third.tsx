@@ -1,7 +1,11 @@
 import "./Third.css";
 
-export const Third = () => {
-  const percentage = 6.7;
+interface ThirdProps {
+  score: number;
+}
+
+export const Third: React.FC<ThirdProps> = ({ score }) => {
+  const percentage = score;
 
   const greenValue = Math.min(255, Math.floor((percentage / 10) * 255));
   const redValue = 255 - greenValue;

@@ -15,6 +15,7 @@ function App() {
   const [imageURL, setImageURL] = useState<string>("");
   const [brandName, setBrandName] = useState<string>("");
   const [productName, setProductName] = useState<string>("");
+  const [summary, setSummary] = useState<Object>({average: 0});
 
   useEffect(() => {
     chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
@@ -44,7 +45,7 @@ function App() {
   }
 
   const handleAnalyzeClick = async () => {
-    setActiveComponent(1);
+    setActiveComponent(2);
     const fetchTestURL = 'http://localhost:3000/submit';
 
     chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
@@ -56,15 +57,6 @@ function App() {
         func: queryDom,
       });
 
-      const seph = await chrome.scripting.executeScript({
-        target: {tabId: currentTabId},
-        func: querySeph,
-      });
-
-      setImageURL(seph[0].result.imageURL);
-      setBrandName(seph[0].result.brandName);
-      setProductName(seph[0].result.productName);
-
       try {
         const response = await fetch(fetchTestURL, {
           method: 'POST',
@@ -74,9 +66,6 @@ function App() {
           body: JSON.stringify({
             url: url,
             dom: res[0].result,
-            imageURL: seph[0].result.imageURL,
-            brandName: seph[0].result.brandName,
-            productName: seph[0].result.productName
           }),
         });
     
@@ -85,7 +74,14 @@ function App() {
         }
     
         const data = await response.json();
-        console.log('Response:', data);
+
+        setTimeout(() => {
+          setActiveComponent(3);
+          setSummary(data);
+          console.log('Response:', data);
+        }, 3000);
+        
+        
       } catch (error) {
         console.error('Error:', error.message);
       }
@@ -99,7 +95,8 @@ function App() {
       case 2:
         return <Second />;
       case 3:
-        return <Third />;
+        // @ts-ignore
+        return <Third score={summary.average}/>;
       case 4:
         return <Fourth />;
       default:
