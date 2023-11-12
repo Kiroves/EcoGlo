@@ -18,7 +18,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "watch": "webpack -w --config webpack.config.js"
+    "watch": "webpack -w --config webpack.config.js",
+    "serve": "webpack serve --mode development"
   },
   "eslintConfig": {
     "extends": [
