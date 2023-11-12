@@ -3,7 +3,7 @@ import "./Second.css";
 export const Second = () => {
   return (
     <div>
-        <header>
+        <header className="header-1">
             <div className="logo">
             ECO
             </div>
