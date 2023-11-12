@@ -23,7 +23,6 @@ app.post('/submit', async (req, res) => {
   const ingredientsList = utils.getIngredientsList(ingredients);
   const {sustainableList, unsustainableList, missingList} = getMatchingIngredients(IngredientsMap, ingredientsList);
   const average = calculateAverage(sustainableList, unsustainableList);
-  console.log(average)
   res.json({sustainableList, unsustainableList, average})
   });
 

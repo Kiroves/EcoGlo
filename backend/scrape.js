@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer')
 const splitString = require('./util');
 async function scrapeProductInfo(url) {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.setContent(url)
 
