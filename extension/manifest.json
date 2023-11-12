@@ -5,7 +5,7 @@
     "version": "1.0",
     "action": {
       "default_popup": "/dist/js/index.html",
-      "default_icon": "/src/logo.svg"
+      "default_icon": "/src/greenleaf4.png"
     },
     "host_permissions": ["https://api.quotable.io/*", "http://localhost:3000/"],
     "permissions": [
