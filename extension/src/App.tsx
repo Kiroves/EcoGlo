@@ -11,7 +11,7 @@ function queryDom() {
 }
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState<number>(4);
+  const [activeComponent, setActiveComponent] = useState<number>(1);
   const [imageURL, setImageURL] = useState<string>("");
   const [brandName, setBrandName] = useState<string>("");
   const [productName, setProductName] = useState<string>("");
@@ -94,10 +94,10 @@ function App() {
   return (
     <div className="App">
       {renderComponent()}
-      <p>dsds</p>
+      {/*<p>dsds</p>
       <p>{imageURL}</p>
       <p>{brandName}</p>
-      <p>{productName}</p>
+      <p>{productName}</p>*/}
     </div>
   );
 }
