@@ -43,6 +43,10 @@ function App() {
         func: querySeph,
       });
 
+      setImageURL(seph[0].result.imageURL);
+      setBrandName(seph[0].result.brandName);
+      setProductName(seph[0].result.productName);
+
       try {
         const response = await fetch(fetchTestURL, {
           method: 'POST',
@@ -67,12 +71,6 @@ function App() {
       } catch (error) {
         console.error('Error:', error.message);
       }
-      
-      setImageURL('sss');
-
-      setImageURL(seph[0].result.imageURL);
-      setBrandName(seph[0].result.brandName);
-      setProductName(seph[0].result.productName);
     });
   };
 
@@ -94,9 +92,6 @@ function App() {
   return (
     <div className="App">
       {renderComponent()}
-      <p>dsds</p>
-      <p>{imageURL}</p>
-      <p>{brandName}</p>
       <p>{productName}</p>
     </div>
   );
