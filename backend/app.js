@@ -11,7 +11,7 @@ const IngredientsMap = {};
 for (const ingredient of sustainableIngredients) {
   IngredientsMap[ingredient.name] = ingredient;
 }
-console.log(calculateAverage(sustainableIngredients));
+const average = calculateAverage(sustainableIngredients);
 
 
 app.get('/', async (req, res) => {
