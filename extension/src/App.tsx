@@ -7,7 +7,7 @@ import { Fourth } from './components/Fourth';
 import './App.css'
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState<number>(1);
+  const [activeComponent, setActiveComponent] = useState<number>(4);
   const [testText, setTestText] = useState<string>("");
 
   const handleAnalyzeClick = async () => {
