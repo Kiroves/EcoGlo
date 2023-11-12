@@ -1,4 +1,19 @@
+.bar {
+    height: 15px;
+    background-color: rgba(144, 202, 249, 0.313);
+    width: 220px;
+    border-radius: 3px;
+}
 
+.bar-child {
+    height: 15px;
+    background-color: rgb(144, 202, 249);
+    /* width: 10%; */
+    /* border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; */
+    border-radius: 3px;
+
+}
 
 .main-3 {
     font-family: 'Noto Sans', sans-serif;
@@ -32,4 +47,5 @@
     font-weight: 700;
     gap: 5px;
     margin-bottom: 10px;
+    flex-direction: column;
 }
