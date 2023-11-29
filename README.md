@@ -1,6 +1,6 @@
 # Eco Glo: Revolutionizing Beauty Sustainability with Tech 
 As part of Hack the Change 2023\
-Devpost: https://devpost.com/software/ecoglo\
+Devpost: https://devpost.com/software/ecoglo
 Demo: https://www.youtube.com/watch?v=zcmkQppVMFM&t=62s
 
 ## Inspiration
