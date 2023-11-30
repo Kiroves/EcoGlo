@@ -9,11 +9,11 @@ With the beauty industry contributing to significant environmental degradation â
 
 ## What It Does
 
-Eco Glo is a Google Chrome extension that seamlessly integrates with Sephora's online store, providing a detailed 'Sustainability Score' for beauty products based on their ingredients with one click of a button.
+EcoGlo is a Google Chrome extension that seamlessly integrates with Sephora's online store, providing a detailed 'Sustainability Score' for beauty products based on their ingredients with one click of a button.
 
-Given an beauty product, Eco Glo will web-scrape the page to determine product information like the name, brand, and ingredients list.
+Given an beauty product, EcoGlo will web-scrape the page to determine product information like the name, brand, and ingredients list.
 
-Using this information, Eco Glo will run its sustainability and ingredients analyzer algorithms based on sustainable beauty product research. Eco Glo will then give you:
+Using this information, EcoGlo will run its sustainability and ingredients analyzer algorithms based on sustainable beauty product research. EcoGlo will then give you:
 
  - A sustainability rating based on the ingredients (score out of 10)
  - List of sustainable ingredients, with descriptions
@@ -35,6 +35,6 @@ Developing a user-centric tool that empowers consumers with the knowledge to mak
 
 We gained invaluable insights into the intersection of environmental science and technology. On the technical side, we learned to optimize web scraping for performance and handle cross-origin requests efficiently. We also explored the depths of TypeScript in building scalable and maintainable frontend applications.
 
-## What's Next for Eco Glo
+## What's Next for EcoGlo
 
 We are committed to expanding our database, refining our scoring algorithm, and incorporating machine learning to improve accuracy. Our goal is to support more retailers and broaden our impact, driving the beauty industry towards genuine sustainability.
